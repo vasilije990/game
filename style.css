@@ -1,0 +1,128 @@
+img{ width: 100%;height: 100%; background-color: red; }
+
+body{ margin: 0; padding: 0; text-align: center;  }
+*{ margin: 0; padding: 0;  }
+.flip-container {
+    
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+}
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+ 
+   
+}
+.card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card .front {
+    background-image: url(img/img.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.card .back {
+    background: blue;
+    transform: rotateX( -180deg );
+    background-image: url(img/img1.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.card.flipped {
+    transform: rotateX( -180deg );
+}
+    
+#pocetna{ margin-top: 4%; 
+text-align: left;
+    display: inline-block; }
+.pocetna{ text-align: left;  }
+   .img{    background-size: cover; display: inline-block;  float: left; background-color: blue; border:0.1vh solid white; }
+   .none{ background-image: url(img.jpg) !important;  }
+   .block{ display: block  !important;  }
+.block_none{ display: none !important;  }
+.igra{width: 80vw; height: 85vh; margin: auto; padding: 0;   display: none; background-image: url(img/img34.jpg); background-size: cover;    }
+.rang{width: 320px; height: 85vh; margin: auto; padding: 0;   display: none; overflow: hidden;/*background-color: blue;*/ }
+.span{ width: 19%; height: 35px; clear:both; /*border:1px solid black;*/ display: inline-block;     vertical-align: middle }
+.pocetB{ display: none;  }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.rezultat{  width: 100%; height: 90%; display: block;  text-align: left;  }
+.buttonRez{ height: 5%;}
+.rezultat1{  width: 100%; display: block;    text-align: left;
+    border-bottom: 1px solid;
+    margin-bottom: 3%;   }
+#pokussaj, #time,#tezina { display: inline-block;  width: 32%;
+    font-size: 20px;
+    border-radius: 15px;
+    font-family: cursive;
+    padding: 0.4% 0;
+
+  }
+#buttonSS { margin-top: 1.5%;}
+.rezultatB{ width: 33%; float: left; border:0;background-color: rgb(200,200,200); }
+.rezultatB:hover, .rezultatB:active{  background-color: rgb(150,150,150); border:0; }
+
+.fb-share-button{  display: inline-block;  }
+.buttonShare{
+    width: auto;
+    height: auto;
+  border:0;
+    display: inline-block;
+    margin: 6% 5% 5% 0;
+}
+#modalTekst{
+    text-align: left;
+
+    display: inline-block;
+}
+#pocetB{display:none;margin-left:auto; margin-right: auto; }
+
+#tangLista,#start{  border-radius: 5px; display: block;  margin-left:auto; margin-right: auto; margin-top: 1%; border:0; color: white; background-color: rgb(90,90,90); width: 20%; padding-top: 1%; padding-bottom: 1%;  }
+#pocetB{  border-radius: 5px; border:0; color: white; background-color: rgb(90,90,90); width: 35%; padding-top: 1%; padding-bottom: 1%;  }
+#tangLista:hover,#start:hover,#pocetB:hover{  background-color:rgb(210,210,210); }
